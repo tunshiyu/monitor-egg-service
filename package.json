@@ -20,14 +20,13 @@
     "egg-mock": "^5",
     "eslint": "^8",
     "eslint-config-egg": "^12",
-    "forever": "^4.0.3",
     "prettier": "^2.7.1"
   },
   "engines": {
     "node": ">=16.0.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "egg-bin dev",
     "stop": "egg-scripts stop --title=egg-server-monitor-server",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
