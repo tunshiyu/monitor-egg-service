@@ -1,0 +1,11 @@
+**/*.svg
+**/*.ejs
+**/*.html
+**/*.json
+**/*.jsx
+package.json
+*.yaml
+.umi
+.umi-production
+
+run

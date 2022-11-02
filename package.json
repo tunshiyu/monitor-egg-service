@@ -1,0 +1,50 @@
+{
+  "name": "monitor-server",
+  "version": "1.0.0",
+  "description": "监控 node 服务",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "egg": "^3",
+    "egg-scripts": "^2",
+    "fluent-ffmpeg": "^2.1.2",
+    "websocket-stream": "^5.5.2",
+    "ws": "^8.10.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12",
+    "forever": "^4.0.3",
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "stop": "egg-scripts stop --title=egg-server-monitor-server",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "ci": {
+    "version": "16, 18",
+    "type": "github"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ziqiya",
+  "license": "MIT"
+}
