@@ -23,11 +23,8 @@
     "eslint-config-egg": "^12",
     "prettier": "^2.7.1"
   },
-  "engines": {
-    "node": ">=16.0.0"
-  },
   "scripts": {
-    "start": "egg-bin dev",
+    "start": "egg-bin dev --node-options--experimental-wasm-threads --node-options--experimental-wasm-bulk-memory",
     "stop": "egg-scripts stop --title=egg-server-monitor-server",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
