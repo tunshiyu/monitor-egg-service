@@ -9,7 +9,7 @@ const ffmpeg = require('fluent-ffmpeg');
 class HomeController extends Controller {
   async index() {
     // 建立WebSocket服务
-    const wss = new WebSocket.Server({ port: 8888, perMessageDeflate: false });
+    const wss = new WebSocket.Server({ port: 8889, perMessageDeflate: false });
 
     // 监听连接
     wss.on('connection', handleConnection);
