@@ -21,10 +21,11 @@
     "egg-mock": "^5",
     "eslint": "^8",
     "eslint-config-egg": "^12",
+    "forever": "^4.0.3",
     "prettier": "^2.7.1"
   },
   "scripts": {
-    "start": "egg-bin dev --node-options--experimental-wasm-threads --node-options--experimental-wasm-bulk-memory",
+    "start": "node index.js",
     "stop": "egg-scripts stop --title=egg-server-monitor-server",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
